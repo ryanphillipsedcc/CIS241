@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name ="description" content="CIS241 Competency Demonstration Fall 2019">
+<meta name ="keywords" content="CIS241, Web development, Edmonds Community College">
+<meta name="author" content="Ryan Phillips">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/myStyle.css">
+<title>My Interests Page</title>
+<style>
+	.interestscontainer
+	{
+	max-width: 1024px;
+  	display:block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin: auto;
+ 	}
+ 	h1.maintitle
+ 	{
+	color:#fe00ef;
+	margin-bottom: 5px;
+	}
+	h4.generaltext
+	{
+	font-family:"Arial";
+	color:white;
+	font-size:100%;
+	margin-bottom: 10px;
+	}
+</style>
+</head>
+<body>
+&nbsp;
+<div class="nav">
+  <a href="home.html"><img src="../images/home.jpg" alt="home button"></a>
+  <a href="resume.html"><img src="../images/resume.jpg" alt="resume button"></a>
+  <a href="interests.html"><img src="../images/interests.jpg" alt="interests button"></a>
+  <a href="reflections.html"><img src="../images/reflections.jpg" alt="reflections button"></a>
+  <a href="guestbook.html"><img src="../images/guestbook.jpg" alt="guestbook button"></a>
+</div>
+<hr>
+<div class="interestsbackground">
+&nbsp;
+<img class="center responsive" src="../images/interestslarge.png" alt="Interests Logo">
+	<div class="interestscontainer">
+		&nbsp;
+		<h1 class="maintitle">3D Modeling & Animation</h1>
+		<table style="background-color:black; opacity:90%; border-spacing: 8px; width:100%">
+			<tr>
+				<td style="width:50%">
+					<video width="495" height="246" controls>
+  					<source src="../media/animationproj1.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+					<h4>Motion Graphics & 3D Modeling Project for Autodesk Maya*</h4>
+				</td>
+				<td style="width:50%">
+					<video width="495" height="246" controls>
+  					<source src="../media/animationproj2.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+					<h4>3D Animation and Rigging Project Final for Autodesk Maya*</h4>
+				</td>
+			</tr>
+		</table>
+		<img class="center" width="900" src="../images/porschefinal.png" alt="Ryan Modeling Porsche">
+<h4 style="text-align: center;">3D Modeling Project for Autodesk Maya*</h4>
+	&nbsp;	
+<h1 class="maintitle">Music</h1>
+	<!--Image Carousel Container-->
+	<div class="image-carousel-container">
+  		<img class="rySlides responsive" src="../images/moog.jpg" alt="Moog Synthesizer" style="width:900px; display: block;margin-left: auto; margin-right: auto;">
+  		<img class="rySlides responsive" src="../images/ironmaiden.jpg" alt="Iron Maiden Concert" style="width:900px; display: block;margin-left: auto; margin-right: auto;">
+  		<img class="rySlides responsive" src="../images/korg.jpg" alt="Korg Synthesizer" style="width:900px; display: block;margin-left: auto; margin-right: auto;">
+  		<img class="rySlides responsive" src="../images/lordsofacid.jpg" alt="Lords of Acid Concert" style="width:900px; display: block;margin-left: auto; margin-right: auto;">
+  		<img class="rySlides responsive" src="../images/custom24.jpg" alt="PRS Custom 24" style="width:900px; display: block;margin-left: auto; margin-right: auto;">
+<!--Image Carousel code-->
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("rySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Changes image every five sec
+}
+</script>
+		</div>
+&nbsp;
+<h1 class="maintitle">Other Interest Links</h1>
+	<div class="links">
+	<ul>
+		<li><a href="https://en.wikipedia.org/wiki/G%C5%8Dj%C5%AB-ry%C5%AB" target="_blank">Goju Ryu Karate</a></li>
+		<li><a href="https://unity.com/" target="_blank">Unity 3D</a></li>	
+		<li><a href="https://www.gibson.com/" target="_blank">Gibson Guitars</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/One_Piece" target="_blank">One Piece</a></li>	
+	</ul>	
+		&nbsp;
+<h4 class="generaltext">* Made for educational purposes only. The names and logos of third party products and companies shown on this website and used in the above materials are the property of their respective owners.</h4>
+	</div>
+</div>
+</div>
+<hr>
+<footer>
+<div class="footernav">
+  <a href="home.html">Home |</a>
+  <a href="resume.html">&nbsp;Resume |</a>
+  <a href="interests.html">&nbsp;Interests |</a>
+  <a href="reflections.html">&nbsp;Reflections |</a>
+  <a href="guestbook.html">&nbsp;Guestbook</a>
+</div>
+<br/>
+<h4>&copy; 2019, Ryan Phillips. All Rights Reserved.</h4>
+<img class="responsive" style="display:block; float:right;" src="../images/html5css3badges.png" alt="HTML5 and CSS3 logos">
+</footer>
+</body>
+</html>

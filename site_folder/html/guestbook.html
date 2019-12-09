@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name ="description" content="CIS241 Competency Demonstration Fall 2019">
+<meta name ="keywords" content="CIS241, Web development, Edmonds Community College">
+<meta name="author" content="Ryan Phillips">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/myStyle.css">
+<title>My Guestbook Page</title>
+<style>
+	h1.maintitle2
+	{
+	color:#02fd44;
+	text-align: center;
+	font-family:serif;
+	font-size:200%;
+	}
+	form.rounded
+	{
+	border-radius:25px;
+	}
+</style>
+</head>
+<body>
+&nbsp;
+<div class="nav">
+  <a href="home.html"><img src="../images/home.jpg" alt="home button"></a>
+  <a href="resume.html"><img src="../images/resume.jpg" alt="resume button"></a>
+  <a href="interests.html"><img src="../images/interests.jpg" alt="interests button"></a>
+  <a href="reflections.html"><img src="../images/reflections.jpg" alt="reflections button"></a>
+  <a href="guestbook.html"><img src="../images/guestbook.jpg" alt="guestbook button"></a>
+</div>
+<hr>
+<div class="guestbookbg">
+	&nbsp;
+	<img class="center responsive" src="../images/guestbooklarge.png" alt="Guestbook Logo">
+	<br><br>
+
+	<form style="background-color: black; opacity:80%; padding:20px;  border-color:#02fd44;" class="container rounded" method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl"> Your Name: <input type="text" name="Name" size="40"/>
+	<br/>
+	<br/>
+	Your E-mail: <input type="text" name="Email" size="40"/>
+	<br/>
+	<br/>
+	What country do you live in?
+	<input type="text" name="country" size="40">
+	<br/> 
+	<br/>
+	What is your experience as a web developer?<br/>
+	<input type="radio" name="Experience" value="None"/>None<br/>
+	<input type="radio" name="Experience" value="Beginner"/>Beginner<br/>
+	<input type="radio" name="Experience" value="Intermediate"/>Intermediate<br/>
+	<input type="radio" name="Experience" value="Advanced"/>Advanced
+	<br/>
+	<br/>
+	Should we add you to our mailing list?
+	<input type="checkbox" name="mailinglist"/><br/>
+	<br/>
+	What web technologies are you interested in?? (check all that apply):<br/>
+	<select name="interests" multiple="multiple" size="6"> <option>HTML</option>
+	<option>CSS</option>
+	<option>JavaScript</option>
+	<option>AJAX</option>
+	<option>SQL</option>
+	<option>PHP</option>
+	</select>
+	<br/> <br/>
+	How did you find my website?
+	<br/>
+	<select name="website">
+	<option>Select one</option>
+	<option>Just surfed in!</option>
+	<option>A friend directed me to your site</option> <option>By search engine</option><option>I came across your site by accident</option> <option>Other</option>
+	</select>
+	<br/>
+	<br/>
+	Your website (if available):<br/>
+	<input type="text" name="firstname" size="80" value="http://"><br/><br/>
+	Comments:<br/>
+	<textarea name="comments" cols="50" rows="6"> Enter your message here.
+	</textarea>
+	<br/>
+	<br/>
+	<input type="submit" value="submit"/> <input type="reset"/>
+	</form>
+	&nbsp;
+	<h1 class="maintitle2">Thank you!</h1>
+	<hr>
+</div>
+
+<footer>
+<div class="footernav">
+  <a href="home.html">Home |</a>
+  <a href="resume.html">&nbsp;Resume |</a>
+  <a href="interests.html">&nbsp;Interests |</a>
+  <a href="reflections.html">&nbsp;Reflections |</a>
+  <a href="guestbook.html">&nbsp;Guestbook</a>
+</div>
+<br/>
+<h4>&copy; 2019, Ryan Phillips. All Rights Reserved.</h4>
+<img class="responsive" style="display:block; float:right;" src="../images/html5css3badges.png" alt="HTML5 and CSS3 logos">
+</footer>
+</body>
+</html>
